@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomHighBold"
+        ><item name="android:fontFamily">@font/bold</item>
+    </style>
+    <!--    <style name="CustomLowBold">-->
+    <!--        <item name="android:fontFamily"></item>-->
+    <!--    </style>-->
+    <style name="CustomLow">
+        <item name="android:fontFamily">@font/poppinlight</item>
+    </style>
+    <style name="CustomMedium">
+        <item name="android:fontFamily">@font/medium</item>
+        </style>
+</resources>

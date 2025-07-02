@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/sp_10"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/sp_10"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/close"
+                style="@style/CustomHighBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_close_24"
+                android:textSize="@dimen/sp_20" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/event_Id"
+                style="@style/CustomHighBold"
+                android:textAlignment="center"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_name"
+            android:textSize="@dimen/sp_20"
+            style="@style/CustomHighBold"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/sp_5"
+            app:cardBackgroundColor="#F9FAF0"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/etEnter_name"
+                style="@style/CustomMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_event_name"
+                android:textSize="@dimen/sp_20" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/client_name"
+            android:textSize="@dimen/sp_20"
+            style="@style/CustomHighBold"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/sp_10"
+            app:cardBackgroundColor="#F9FAF0"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/etClientName"
+                style="@style/CustomMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_name" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/client_Number"
+            android:textSize="@dimen/sp_20"
+            style="@style/CustomHighBold"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/sp_10"
+            app:cardBackgroundColor="#F9FAF0"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/etClientNumber"
+                style="@style/CustomMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_number"
+                android:inputType="number"
+                android:maxLength="10" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/client_address"
+            android:textSize="@dimen/sp_20"
+            style="@style/CustomHighBold"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/sp_10"
+            app:cardBackgroundColor="#F9FAF0"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/etClientAddress"
+                style="@style/CustomMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/enter_address"
+                android:minLines="2" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/event_date"
+            android:textSize="@dimen/sp_20"
+            style="@style/CustomHighBold"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/sp_10"
+            app:cardBackgroundColor="#F9FAF0"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/etDate"
+                style="@style/CustomMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="@string/enter_date"
+                android:inputType="none" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_time"
+            android:textSize="@dimen/sp_20"
+            style="@style/CustomHighBold"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/sp_10"
+            app:cardBackgroundColor="#F9FAF0"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/etTime"
+                style="@style/CustomMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:hint="@string/enter_time"
+                android:inputType="none" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note"
+            android:textSize="@dimen/sp_20"
+            style="@style/CustomHighBold"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/sp_10"
+            app:cardBackgroundColor="#F9FAF0"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/etNote"
+                style="@style/CustomMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:hint="@string/enter_note"
+                android:minLines="5" />
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnADD"
+            style="@style/CustomHighBold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/sp_10"
+            app:cornerRadius="@dimen/sp_10"
+            android:text="@string/add"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

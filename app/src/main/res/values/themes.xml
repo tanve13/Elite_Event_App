@@ -1,0 +1,68 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EventPlannerProject" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryContainer">@color/pink</item>
+        <item name="colorOnPrimaryContainer">@color/black</item>
+        <item name="colorSecondaryContainer">@color/pink</item> <!--change the bottom navigation bar item color -->
+    </style>
+
+    <style name="Theme.EventPlannerProject" parent="Base.Theme.EventPlannerProject" />
+
+
+<!--    <style name="MyDatePicker" parent="Theme.AppCompat.Light.Dialog">-->
+<!--        <item name="android:headerBackground">@color/pink</item>-->
+<!--        <item name="android:textColorPrimary">@color/black</item>-->
+<!--        <item name="android:textColorSecondary">@color/black</item>-->
+<!--&lt;!&ndash;        <item name="colorAccent">@color/black</item>&ndash;&gt;-->
+<!--<style name="MyDatePicker" parent="Theme.AppCompat.Light.Dialog">-->
+<!--        <item name="android:headerBackground">@color/pink</item>-->
+<!--        <item name="android:textColorPrimary">@color/black</item>-->
+<!--        <item name="android:textColorSecondary">@color/white</item>-->
+<!--        <item name="colorAccent">@color/pink</item>-->
+<!--    </style>-->
+<!--    <style name="MyTimePicker" parent="Theme.AppCompat.Light.Dialog">-->
+<!--        <item name="android:headerBackground">@color/pink</item>-->
+<!--        <item name="android:textColorPrimary">@color/black</item>-->
+<!--        <item name="android:textColorSecondary">@color/white</item>-->
+<!--        <item name="colorAccent">@color/pink</item>-->
+<!--    </style>-->
+    <style name="MyDatePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:headerBackground">@color/pink</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorAccent">@color/pink</item>
+    </style>
+
+    <style name="MyTimePicker" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:headerBackground">@color/pink</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorAccent">@color/pink</item>
+    </style>
+
+    <!--<style name = "Button" parent="Theme.AppCompat.Light.DarkActionBar">-->
+<!--    <item name="android:windowBackground">@color/white</item>-->
+<!--    <item name="android:textColorPrimary">@color/white</item>-->
+<!--</style>-->
+<!--    <style name="Theme.EventPlannerProject" parent="Base.Theme.EventPlannerProject" >-->
+<!--        <item name="android:background">@color/white</item>-->
+<!--        <item name="android:textColorPrimary">@color/black</item>-->
+<!--    </style>-->
+<!--    <style name="CustomHighBold"-->
+<!--        ><item name="android:fontFamily">@font/bold</item>-->
+<!--    </style>-->
+<!--    <style name="CustomLowBold">-->
+<!--        <item name="android:fontFamily"></item>-->
+<!--    </style>-->
+
+<!--    <style name="MyTimePicker" parent="Theme.AppCompat.Light.Dialog">-->
+<!--        <item name="android:windowBackground">@color/pink</item>-->
+<!--        <item name="android:textColorPrimary">@color/black</item>-->
+<!--        <item name="android:textColorSecondary">@color/white</item>-->
+<!--        <item name="android:headerBackground">@color/black</item>-->
+<!--    </style>-->
+</resources>

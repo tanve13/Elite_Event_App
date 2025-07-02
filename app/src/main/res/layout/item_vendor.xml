@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/sp_5"
+    app:cardCornerRadius="@dimen/sp_10"
+    app:cardElevation="@dimen/sp_5"
+    app:cardBackgroundColor="#FFB6C1">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/sp_10">
+    <TextView
+    android:id="@+id/tvVendorName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/vendor_name"
+        android:textColor="@color/black"
+    android:textSize="@dimen/sp_20"
+    android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvVendorCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvVendorName"
+        android:textColor="@color/black"
+        android:text="@string/vendor_category"
+        android:textSize="@dimen/sp_20" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvVendorCategory"
+        android:id="@+id/contact"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/black"
+        android:layout_below="@id/contact"
+        android:id="@+id/tvEmail"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvEmail"
+        android:id="@+id/tvAddress"/>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rgVendor"
+        android:layout_below="@id/tvAddress"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/baseline_create_24"
+        android:layout_below="@id/rgVendor"
+        android:id="@+id/tvUpdate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/baseline_delete_24"
+        android:layout_toRightOf="@id/tvUpdate"
+        android:layout_marginLeft="@dimen/sp_20"
+        android:layout_below="@id/rgVendor"
+        android:id="@+id/tvDelete"/>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginVertical="@dimen/sp_10"-->
+<!--        android:layout_below="@id/tvUpdate"-->
+<!--        android:background="@color/black" />-->
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

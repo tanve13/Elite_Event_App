@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.tanveer.eventplannerproject.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/singleEventDetailFragment"
+        android:name="com.tanveer.eventplannerproject.SingleEventDetailFragment"
+        android:label="@string/event_details"
+        tools:layout="@layout/fragment_single_event_detail" >
+        <action
+            android:id="@+id/action_singleEventDetailFragment_to_guestFragment"
+            app:destination="@id/guestFragment" />
+        <action
+            android:id="@+id/action_singleEventDetailFragment_to_vendorFragment"
+            app:destination="@id/vendorFragment" />
+        <action
+            android:id="@+id/action_singleEventDetailFragment_to_budgetFragment"
+            app:destination="@id/budgetFragment" />
+        <action
+            android:id="@+id/action_singleEventDetailFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guestFragment"
+        android:name="com.tanveer.eventplannerproject.GuestFragment"
+        android:label="fragment_event_guest_list"
+        tools:layout="@layout/fragment_guest" />
+    <fragment
+        android:id="@+id/vendorFragment"
+        android:name="com.tanveer.eventplannerproject.VendorFragment"
+        android:label="fragment_vendor"
+        tools:layout="@layout/fragment_vendor" />
+    <fragment
+        android:id="@+id/budgetFragment"
+        android:name="com.tanveer.eventplannerproject.BudgetFragment"
+        android:label="fragment_budget"
+        tools:layout="@layout/fragment_budget" />
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.tanveer.eventplannerproject.ScheduleFragment"
+        android:label="fragment_schedule"
+        tools:layout="@layout/fragment_schedule" />
+    <activity
+        android:id="@+id/startingScreen"
+        android:name="com.tanveer.eventplannerproject.StartingScreen"
+        android:label="activity_starting_screen"
+        tools:layout="@layout/activity_starting_screen" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.tanveer.eventplannerproject.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <activity
+        android:id="@+id/splashScreenActivity"
+        android:name="com.tanveer.eventplannerproject.SplashScreenActivity"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.tanveer.eventplannerproject.MainActivity"
+        android:label="dialog_guest"
+        tools:layout="@layout/dialog_guest" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.tanveer.eventplannerproject.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+</navigation>

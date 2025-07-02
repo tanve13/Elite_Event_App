@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="group">
+        <item name="unassignedGroup">Unassigned group</item>
+        <item name="family">Family</item>
+        <item name="friends">Friends</item>
+        <item name="colleagues">Colleagues</item>
+        <item name="relative">Relative</item>
+    </string-array>
+    <string-array name="menu">
+        <item name="unassignedMenu">Unassigned menu</item>
+        <item name="adultMenu">Adult Menu</item>
+        <item name="childrenMenu">Children Menu</item>
+        <item name="vegetarianMenu">Vegetarian Menu</item>
+        <item name="dietMenu">Diet Menu</item>
+    </string-array>
+    <string-array name="table">
+        <item name="unassignedTable">Unassigned table</item>
+        <item name="headTable"> Head Table</item>
+        <item name="firstRowTable">First Row Table</item>
+        <item name="secondRowTable">Second Row Table</item>
+        <item name="ThirdRowTable">Third Row Table</item>
+    </string-array>
+    <string-array name="category">
+        <item name="unassignedCategory">Unassigned Category</item>
+        <item name="attireAndAccessories">Attire and Accessories</item>
+        <item name="HealthAndBeauty">Health and Beauty</item>
+        <item name="musicAndShow">Music and Show</item>
+        <item name="flowerAndDecor">Flower and Decor</item>
+        <item name="photoAndVideo">Photo and Video</item>
+        <item name="reception">Reception</item>
+        <item name="transportation">Transportation</item>
+        <item name="accommodation">Accommodation</item>
+    </string-array>
+    <string-array name="vendorCategory">
+        <item name="unassignedCategory">Unassigned Category</item>
+        <item name="attireAndAccessories">Attire and Accessories</item>
+        <item name="HealthAndBeauty">Health and Beauty</item>
+        <item name="musicAndShow">Music and Show</item>
+        <item name="flowerAndDecor">Flower and Decor</item>
+        <item name="photoAndVideo">Photo and Video</item>
+        <item name="reception">Reception</item>
+        <item name="transportation">Transportation</item>
+        <item name="accommodation">Accommodation</item>
+    </string-array>
+    <string-array name="name">Name</string-array>
+</resources>

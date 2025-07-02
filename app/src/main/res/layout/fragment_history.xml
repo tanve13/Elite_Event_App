@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HistoryFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_date"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        style="@style/CustomHighBold"
+        android:textSize="@dimen/sp_30"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/from_date"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/sp_20"
+        style="@style/CustomMedium"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/select_date_from"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_20"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="none"
+        android:id="@+id/dateFrom"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/to_this"
+        android:textSize="@dimen/sp_20"
+        android:layout_margin="10dp"
+        style="@style/CustomMedium"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/select_to_this_date"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_20"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:inputType="none"
+        android:id="@+id/toThis"/>
+
+    <TextView
+        android:id="@+id/generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        style="@style/CustomHighBold"
+        android:text="Generate Pie Chart"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+    </LinearLayout>
+</ScrollView>

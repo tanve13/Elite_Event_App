@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/sp_5"
+    app:cardCornerRadius="@dimen/sp_10"
+    app:cardElevation="@dimen/sp_5"
+    app:cardBackgroundColor="#FFB6C1">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/sp_10">
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/event_name"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold" />
+<!--    <TextView-->
+<!--        android:id="@+id/tvNote"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/note"-->
+<!--        android:textSize="@dimen/sp_20"-->
+<!--        android:layout_below="@id/tvName"-->
+<!--        android:textStyle="bold" />-->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/category"
+    android:textSize="@dimen/sp_20"
+    android:layout_below="@+id/tvName"
+    android:textStyle="bold"
+    android:id="@+id/tvcategory"/>
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount"
+        android:layout_below="@id/tvcategory"
+        android:textSize="@dimen/sp_20" />
+
+
+   <TextView
+        android:id="@+id/tvUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@id/tvAmount"
+       android:drawableTop="@drawable/baseline_create_24"
+        android:textStyle="bold"/>
+   <TextView
+        android:id="@+id/tvDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/baseline_delete_24"
+       android:layout_below="@id/tvAmount"
+       android:layout_marginLeft="@dimen/sp_20"
+        android:layout_toRightOf="@id/tvUpdate"
+
+        android:textStyle="bold"/>
+
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_below="@id/tvDelete"-->
+<!--        android:layout_marginVertical="@dimen/sp_10"-->
+<!--        android:background="@color/black" />-->
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
