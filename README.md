@@ -25,7 +25,7 @@ A simple and efficient Android event management app built using **Kotlin**, **Ro
 
 | Home | Event Details | History |
 |------|-----------|---------|
-| ![Home](screenshots/home.jpg) | ![Add](screenshots/event details.jpg) | ![History](screenshots/history.jpg) | ![Profile](screenshots/profile.jpg) |
+| ![Home](screenshots/home.jpg) | ![Add](screenshots/event_details.jpg) | ![History](screenshots/history.jpg) | ![Profile](screenshots/profile.jpg) |
 
 
 
